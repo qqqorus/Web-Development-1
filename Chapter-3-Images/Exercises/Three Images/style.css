@@ -1,0 +1,89 @@
+/* Universal selector to apply styles to all elements */
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Sets a modern sans-serif font stack */
+    color: #e8d1a7; /* Sets the default text color to a light beige */
+    background-color: #442d1d; /* Sets the default background color to a dark brown */
+    text-decoration: none; /* Removes underline from links and other text decorations */
+}
+
+/* Styles for the main content container */
+#maincontent {
+    margin-top: 4%; /* Adds top margin */
+    margin-left: 13%; /* Adds left margin */
+    margin-right: 10%; /* Adds right margin */
+    margin-bottom: 4%; /* Adds bottom margin */
+}
+
+/* Styles for the image containers */
+.images {
+    display: inline-block; /* Displays images in a line */
+    margin: 5px; /* Adds a small margin around each image container */
+}
+
+/* Styles for all images */
+img {
+    width: 330px; /* Sets the width of all images to 330px */
+    border: 3px solid #9d9167; /* Adds a 3px solid border with a gold-like color */
+    display: inline-block; /* Ensures images are displayed inline */
+}
+
+/* Styles for the image with ID "cat1" */
+#cat1 {
+    /* Styles for elements with class "zoom" */
+    &.zoom {
+        transition: transform 1s; /* Adds a smooth transition effect for scaling */
+        width: 330px; /* Ensures the width remains consistent */
+        position: relative; /* Positions the element relative to its normal position */
+        z-index: 1; /* Sets the stack order */
+    }
+
+    /* Hover effect for elements with class "zoom" */
+    &.zoom:hover {
+        -ms-transform: scale(1.2); /* Scales the image for Internet Explorer */
+        -webkit-transform: scale(1.2); /* Scales the image for WebKit browsers */
+        transform: scale(1.2); /* Scales the image by 20% */
+        z-index: 2; /* Brings the hovered image to the front */
+        filter: grayscale(100%); /* Converts the image to grayscale */
+    }
+}
+
+/* Styles for the image with ID "cat2" */
+#cat2 {
+    /* Styles for elements with class "zoom" */
+    &.zoom {
+        transition: transform 1s; /* Adds a smooth transition effect for scaling */
+        width: 330px; /* Ensures the width remains consistent */
+        position: relative; /* Positions the element relative to its normal position */
+        z-index: 1; /* Sets the stack order */
+    }
+
+    /* Hover effect for elements with class "zoom" */
+    &.zoom:hover {
+        -ms-transform: scale(1.2); /* Scales the image for Internet Explorer */
+        -webkit-transform: scale(1.2); /* Scales the image for WebKit browsers */
+        transform: scale(1.2); /* Scales the image by 20% */
+        z-index: 2; /* Brings the hovered image to the front */
+        filter: sepia(40%); /* Applies a sepia tone to the image */
+    }
+}
+
+/* Styles for the image with ID "cat3" */
+#cat3 {
+    /* Styles for elements with class "zoom" */
+    &.zoom {
+        transition: transform 1s; /* Adds a smooth transition effect for scaling */
+        width: 330px; /* Ensures the width remains consistent */
+        position: relative; /* Positions the element relative to its normal position */
+        z-index: 1; /* Sets the stack order */
+    }
+
+    /* Hover effect for elements with class "zoom" */
+    &.zoom:hover {
+        -ms-transform: scale(1.2); /* Scales the image for Internet Explorer */
+        -webkit-transform: scale(1.2); /* Scales the image for WebKit browsers */
+        transform: scale(1.2); /* Scales the image by 20% */
+        z-index: 2; /* Brings the hovered image to the front */
+        filter: saturate(200%); /* Increases the saturation of the image by 50% */
+    }
+}
+

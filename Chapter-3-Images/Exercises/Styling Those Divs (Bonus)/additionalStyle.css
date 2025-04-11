@@ -1,0 +1,27 @@
+/* Styling for the div with ID "div1" */
+#div1 {
+    border: 5px solid #9354d1; /* Changes the border color to a purple shade */
+    box-shadow: 10px 10px 10px red; /* Adds a red shadow offset by 10px horizontally and vertically */
+  }
+  
+  /* Styling for the div with ID "div2" */
+  #div2 {
+    border: 5px solid #1ddc1e; /* Changes the border color to a bright green shade */
+    box-shadow: inset 10px 10px 10px black; /* Adds an inset black shadow, creating a "pressed" effect */
+  }
+  
+  /* Styling for the div with ID "div3" */
+  #div3 {
+    border-radius: 20px; /* Rounds the corners of the div with a 20px radius */
+    border: 5px solid #f68c16; /* Changes the border color to an orange shade */
+    outline: 10px solid #0001fd; /* Adds a blue outline around the div */
+    box-shadow:
+      0 0 0 17px hsl(359, 100%, 49%), /* Adds a red shadow around the div */
+      0 0 0 25px hsl(120, 100%, 25%); /* Adds a green shadow around the red shadow */
+  }
+  
+  /* Styling for the div with ID "div4" */
+  #div4 {
+    border: 5px solid #a5252f; /* Changes the border color to a dark red shade */
+    text-shadow: 10px 5px 1px black; /* Adds a black shadow to the text, offset by 10px horizontally and 5px vertically */
+  }

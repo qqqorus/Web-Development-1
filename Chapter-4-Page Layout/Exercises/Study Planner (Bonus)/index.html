@@ -1,0 +1,278 @@
+<!-- 
+ - Wireframe (add image to the directory);
+- Header, Navigation menu, main content and a footer;
+- The main content must be split into two or three columns;
+- Five demo items;
+- Your HTML should use semantically correct elements;
+- An external style.css file;
+- The use of at least one button;
+- The page does not need to be interactive;
+- You should focus on the structure and visual layout of the page, but also consider design too;
+- Commenting throughout. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="">
+</head>
+<body>
+    <header>
+        <h1>Study Planner</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a>Courses</a>
+            <a>Notes</a>
+            <a>Materials</a>
+            <a>Student Info</a>
+        </nav>
+    </header>
+
+    <main id="container">
+        <section id="column1">
+            <div id="student">
+                <h4>STUDENT INFO</h4>
+                <article>
+                    <b>ID Number:</b> 18-1134-997 <br>
+                    <b>Course:</b> Cyber Security <br>
+                    <b>Year & Level:</b> Year 1 Level 4 <br><br>
+                    > <a>more</a> <
+                </article>
+            </div>
+            <div id="todo">
+                <h4>TO-DO LIST</h4>
+                <input type="checkbox" id="todo1" name="todo1">
+                <label for="todo1">physical diagram (databases)</label><br>
+                <hr>
+                <input type="checkbox" id="todo2" name="todo2">
+                <label for="todo2">finish ch4-6 (webdev)</label><br>
+                <hr>
+                <input type="checkbox" id="todo3" name="todo3">
+                <label for="todo3">start assessment (digi-for)</label><br>
+                <hr>
+                <p><button>+</button></p>
+            </div>
+            <div id="profs">
+                <h4>Handled by: Ms. Rafia</h4>
+            </div>
+            <div id="events">
+                <h4>UPCOMING EVENTS</h4>
+                <ul>
+                    <li>
+                        <b>Class Activity</b><br>
+                        <i>Today, 3:00PM</i>
+                    </li>
+                    <li>
+                        <b>SoloLearn Course</b><br>
+                        <i>Today, 7:00PM</i>
+                    </li>
+                    <li>
+                        <b>Assignment 1: Introduction to HTML</b><br>
+                        <i>5 May, 11:59PM</i>
+                    </li>
+                    <li>
+                        <b>Assignment 2: Introduction to CSS</b><br>
+                        <i>13 May, 11:59PM</i>
+                    </li>
+                    <li>
+                        <b>Assignment 3: Introduction to JavaScript</b><br>
+                        <i>20 May, 11:59PM</i>
+                    </li>
+                    <li>
+                        <b>Assessment 1: Web Design</b><br>
+                        <i>6 June, 11:59PM</i>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="column2">
+            <div id="desc">
+                <h3>WEB DEVELOPMENT I</h3>
+                <article>The web is now the primary platform for deploying and using software, essential for work, social interaction, 
+                    collaboration, and entertainment, making basic web development skills crucial for anyone in computing. 
+                    This module teaches the fundamentals of creating interactive online experiences using HTML5, CSS, and JavaScript, 
+                    covering content structure, styling, and interactivity, with no prior experience required. Through coding 
+                    challenges and creative projects, you’ll build a practical understanding of web development and best practices.</article>
+                <section class="courses">
+                    <div class="courses">
+                        <img src="https://www.nicepng.com/png/full/70-702627_python-logo-png.png" alt="html logo" height="150px">
+                        <br>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="courses">
+                        <img src="https://3.bp.blogspot.com/-oRSUw_TmO9o/XIb61m88fcI/AAAAAAAAIq0/vnxl2zzsXEQsnHI2fH4GjKu_ZT0urRo4wCK4BGAYYCw/s1600/icon%2Bcss%2B3.png" alt="css logo" height="150px">
+                        <br>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="courses">
+                        <img src="https://vectorseek.com/wp-content/uploads/2023/09/java-script-js-Logo-Vector.svg-.png" alt="js logo" height="150px">
+                        <br>
+                        <button>Learn More</button>
+                    </div>
+                </section>
+            </div>
+            <div id="timetable">
+                <h3>TIMETABLE</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9:00 - 9:30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9:30 - 10:00</td>
+                            <td rowspan="2" class="akifa"><b>THE COMPUTER DATABASES</b><br>Ms. Akifa</td>
+                            <td rowspan="2" class="danish"><b>DIGITAL FORENSICS</b><br>Mr. Danish</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10:00 - 11:00</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11:00 - 12:00</td>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="2" class="danish"><b>DIGITAL FORENSICS</b><br>Mr. Danish</td>
+                        </tr>
+                        <tr>
+                            <td>12:00 - 12:30</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12:30 - 1:00</td>
+                            <td rowspan="2" class="rafia"><b>WEB DEVELOPMENT I</b><br>Ms. Rafia</td>
+                            <td rowspan="2" class="akifa"><b>THE COMPUTER DATABASES</b><br>Ms. Akifa</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1:00 - 2:00</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2:00 - 2:30</td>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="2" class="rafia"><b>WEB DEVELOPMENT I</b><br>Ms. Rafia</td>
+                        </tr>
+                        <tr>
+                            <td>2:30 - 3:30</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="column3">
+            <div id="calendar">
+                <h3><&emsp;&emsp;May 2025&emsp;&emsp;></h3>
+                <div class="calendar_date">
+                    <li class="calendar_day">S</li>
+                    <li class="calendar_day">M</li>
+                    <li class="calendar_day">T</li>
+                    <li class="calendar_day">W</li>
+                    <li class="calendar_day">TH</li>
+                    <li class="calendar_day">F</li>
+                    <li class="calendar_day">S</li>
+                    <li class="blank">26</li>
+                    <li class="blank">27</li>
+                    <li class="blank">28</li>
+                    <li class="blank">29</li>
+                    <li class="blank">30</li>
+                    <li class="calendar_number">1</li>
+                    <li class="calendar_number">2</li>
+                    <li class="calendar_number chosen">3</li>
+                    <li class="calendar_number">4</li>
+                    <li class="calendar_number">5</li>
+                    <li class="calendar_number">6</li>
+                    <li class="calendar_number">7</li>
+                    <li class="calendar_number">8</li>
+                    <li class="calendar_number">9</li>
+                    <li class="calendar_number">10</li>
+                    <li class="calendar_number">11</li>
+                    <li class="calendar_number">12</li>
+                    <li class="calendar_number">13</li>
+                    <li class="calendar_number">14</li>
+                    <li class="calendar_number">15</li>
+                    <li class="calendar_number">16</li>
+                    <li class="calendar_number">17</li>
+                    <li class="calendar_number">18</li>
+                    <li class="calendar_number">19</li>
+                    <li class="calendar_number">20</li>
+                    <li class="calendar_number">21</li>
+                    <li class="calendar_number">22</li>
+                    <li class="calendar_number">23</li>
+                    <li class="calendar_number">24</li>
+                    <li class="calendar_number">25</li>
+                    <li class="calendar_number">26</li>
+                    <li class="calendar_number">27</li>
+                    <li class="calendar_number">28</li>
+                    <li class="calendar_number">29</li>
+                    <li class="calendar_number">30</li>
+                    <li class="calendar_number">31</li>
+                    <li class="blank">1</li>
+                    <li class="blank">2</li>
+                    <li class="blank">3</li>
+                    <li class="blank">4</li>
+                    <li class="blank">5</li>
+                    <li class="blank">6</li>
+                </div>
+            </div>
+            <div id="teachings">
+                <h4>TEACHING MATERIALS</h4>
+                <ul>
+                    <li><a href="https://docs.google.com/presentation/d/1hjVfZCHMYLzU8Wp42RsEu5JzrHVXAs3u/edit?usp=sharing&ouid=109984621644750358053&rtpof=true&sd=true" target="_blank">Lecture 01</a></li>
+                    <li><a href="https://docs.google.com/presentation/d/1-HPk7N8XZIv7x3E8zg5rhr7F8aBQ3B5r/edit?usp=sharing&ouid=109984621644750358053&rtpof=true&sd=true" target="_blank">Lecture 02</a></li>
+                    <li><a href="https://docs.google.com/presentation/d/1a5xwRh1tCYo8SrqImG4h6TFkkSvWS9RS/edit?usp=sharing&ouid=109984621644750358053&rtpof=true&sd=true" target="_blank">Lecture 03</a></li>
+                    <li><a href="https://docs.google.com/presentation/d/1WbuIGbLYTVcdoTTvnDqFqKbOStw_zke2/edit?usp=sharing&ouid=109984621644750358053&rtpof=true&sd=true" target="_blank">Lecture 04</a></li>
+                    <li><a href="https://docs.google.com/presentation/d/1JFZX-nUZPVx8wUklt532E3eISbLRd2cb/edit?usp=sharing&ouid=109984621644750358053&rtpof=true&sd=true" target="_blank">Lecture 05</a></li>
+                    <li><a href="https://docs.google.com/presentation/d/1vuM7xa6gEZe6QtAuJO5R1I_co6WmcIMb/edit?usp=sharing&ouid=109984621644750358053&rtpof=true&sd=true" target="_blank">Lecture 06</a></li>
+                    <li><a href="https://docs.google.com/presentation/d/12a1slGN-FU4Sy6CYErvBPYdw9h8uTdK-/edit?usp=sharing&ouid=109984621644750358053&rtpof=true&sd=true" target="_blank">Lecture 07</a></li>
+                    <br>
+                    > <a>more</a> <
+                </ul>
+            </div>
+            <div id="skills">
+                <h4>SKILL BAR</h4>
+                <section>
+                    <p><b>HTML</b></p>
+                    <div class="container">
+                        <div class="skills html">90%</div>
+                    </div>
+                    <p><b>CSS</b></p>
+                    <div class="container">
+                        <div class="skills css">80%</div>
+                    </div>
+                    <p><b>JavaScript</b></p>
+                    <div class="container">
+                        <div class="skills js">20%</div>
+                    </div>
+                    <p><b>Python</b></p>
+                    <div class="container">
+                        <div class="skills py">70%</div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h5>Copyright &copy; Study Planner - 2025 Quishia Desiree Famador</h5>
+    </footer>
+</body>
+</html>

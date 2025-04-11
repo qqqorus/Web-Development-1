@@ -1,0 +1,226 @@
+/* General reset and font settings for all elements */
+* {
+    box-sizing: border-box; /* Ensures padding and border are included in element dimensions */
+    font-family: Arial, Helvetica, sans-serif; /* Sets a default font for the entire page */
+}
+
+/* Styles for the body of the webpage */
+body {
+    background-image: url('https://i.pinimg.com/1200x/7e/38/95/7e38952faa3c2f94bc41d24cf1d2b85e.jpg'); /* Background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-size: contain; /* Ensures the background image fits within the container */
+    background-color: rgb(129, 157, 119); /* Fallback background color */
+    top: -8px; /* Adjusts the position of the body */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+/* Styles for the header section */
+header {
+    background-color: #d6ccc2; /* Background color for the header */
+    color: #244c43; /* Text color */
+    text-decoration: none; /* Removes underlines from links */
+    position: relative; /* Positions the header relative to its normal position */
+    margin: 0; /* Removes default margin */
+    padding: 2%; /* Adds padding inside the header */
+    top: 0px; /* Positions the header at the top */
+    left: 0; /* Aligns the header to the left */
+    width: 100%; /* Ensures the header spans the full width of the page */
+    display: inline-block; /* Displays header elements in a single line */
+}
+
+/* Styles for the main heading in the header */
+#headername {
+    display: inline-block; /* Makes sure the elements are in the same line as the other elements in the header */
+    font-size: 25px; /* Sets the font size */
+    font-family: monospace; /* Uses a monospace font */
+    padding: 0px; /* Removes padding */
+    margin: 0px; /* Removes margin */
+    color: #244c43; /* Text color */
+    margin-right: 50px; /* Adds space to the right of the heading */
+}
+
+/* Styles for navigation links in the header */
+.navheader {
+    font-size: 18px; /* Sets the font size */
+    color: #244c43; /* Text color */
+    font-family: monospace; /* Uses a monospace font */
+    text-decoration: none; /* Removes the underlines from the links */
+    display: inline-block; /* Displays all the links in the same line */
+    margin-right: 20px; /* Adds space between navigation links */
+}
+
+/* Hover effect for navigation links */
+.navheader:hover {
+    color: antiquewhite; /* Changes text color on hover */
+}
+
+/* Styles for the search bar */
+#searchbar {
+    font-size: 14px; /* Sets the font size */
+    padding: 10px; /* Adds padding inside the search bar */
+    height: 30px; /* Sets the height of the search bar */
+    width: 250px; /* Sets the width of the search bar */
+    border-radius: 10px; /* Rounds the corners of the search bar's input area */
+}
+
+/* Styles for the search form */
+#form {
+    float: right; /* Positions the form to the right */
+    padding: 0px; /* Removes padding */
+    margin: 0px; /* Removes margin */
+    display: inline; /* Ensures the form is displayed inline */
+}
+
+/* Styles for the main title section */
+#maintitle {
+    font-size: 50px; /* Sets the font size */
+    font-family: monospace; /* Uses a monospace font */
+    padding: 0px; /* Removes padding */
+    margin-top: 15%; /* Adds space at the top */
+    margin-bottom: 20%; /* Adds space at the bottom */
+    color: #3c6c4f; /* Text color */
+    text-align: center; /* Centers the text */
+    text-shadow: 10px 4px 4px #cccbcb; /* Adds a shadow effect to the text */
+}
+
+/* Styles for bold text within the main title */
+#maintitle b {
+    font-family: monospace; /* Uses a monospace font */
+}
+
+/* Styles for section titles */
+.title {
+    color: #244c43; /* Text color */
+    text-align: center; /* Centers the text */
+}
+
+/* Styles for div containers */
+.divstyle {
+    border: 20px solid #a29b94; /* Adds a border around the div */
+    background-color: #d6ccc2; /* Background color */
+    margin: 2% 15% 2% 15%; /* Adds margin around the div */
+    padding: 10px; /* Adds padding inside the div */
+}
+
+/* Styles for tables */
+.table {
+    margin-left: auto; /* Centers the table horizontally */
+    margin-right: auto; /* Centers the table horizontally */
+    margin-top: 20px; /* Adds space at the top */
+    margin-bottom: 20px; /* Adds space at the bottom */
+    width: 70%; /* Sets the width of the table */
+    padding: 5px; /* Adds padding inside the table */
+}
+
+/* General table styles */
+table {
+    border-collapse: collapse; /* Merges table borders */
+    border-spacing: 0; /* Removes space between table cells */
+    width: 100%; /* Ensures the table spans the full width */
+    border: 1px solid #ddd; /* Adds a border to the table */
+    background-color: #f3efe4; /* Background color for the table */
+    color: #244c43; /* Text color */
+}
+
+/* Styles for articles */
+article {
+    text-align: justify; /* Justifies the text */
+    margin-left: 50px; /* Adds space to the left */
+    margin-right: 50px; /* Adds space to the right */
+    color: #244c43; /* Text color */
+}
+
+/* Styles for code elements */
+code {
+    font-family: monospace; /* Uses a monospace font */
+}
+
+/* Styles for table headers */
+th {
+    background-color: #a29b94; /* Background color */
+    text-align: left; /* Aligns text to the left */
+    padding: 15px; /* Adds padding inside the header */
+    border: 1px solid #cccbcb; /* Adds a border */
+}
+
+/* Styles for code elements */
+code {
+    font-size: 14px; /* Sets the font size */
+}
+
+/* Styles for table cells */
+td {
+    font-size: 15px; /* Sets the font size */
+    text-align: left; /* Aligns text to the left */
+    padding: 15px; /* Adds padding inside the cell */
+    border: 1px solid #cccbcb; /* Adds a border */
+}
+
+/* Styles for the syntax column in tables */
+#syntax {
+    width: 40%; /* Sets the width of the column */
+}
+
+/* Styles for the "Back to Top" link */
+#top {
+    float: right; /* Positions the link to the right */
+    font-family: monospace; /* Uses a monospace font */
+    margin-right: 20px; /* Adds space to the right */
+    margin-bottom: 30px; /* Adds space at the bottom */
+    background-color: #244c43; /* Background color */
+    color: #ddd; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 50px; /* Rounds the corners */
+    padding: 15px; /* Adds padding */
+}
+
+/* Hover effect for the "Back to Top" link */
+#top:hover {
+    color: #244c43; /* Changes text color on hover */
+    background-color: #d6ccc2; /* Changes background color on hover */
+}
+
+/* Styles for the footer section */
+footer {
+    background-color: #d6ccc2; /* Background color */
+    padding: 1%; /* Adds padding inside the footer */
+    flex: 1; /* Ensures the footer takes up available space */
+    width: 100%; /* Ensures the footer spans the full width */
+    display: inline-block; /* Displays the elements in the footer in the same line and not in another lin */
+}
+
+/* Sets the style for the navigation links in the footer */
+.navfooter {
+    float: left; /* Positions links to the left */
+    font-size: 18px; /* Sets the font size */
+    font-family: monospace; /* Uses a monospace font */
+    color: #244c43; /* Text color */
+    text-decoration: none; /* Removes underlines */
+    margin-right: 20px; /* Adds space between links */
+}
+
+/* Changes the color of the text 'Facebook' when it is hovered */
+#fb:hover {
+    color: rgb(5, 97, 163); /* Changes text color on hover */
+}
+
+/* Changes the color of the text 'GitHub' when it is hovered */
+#gh:hover {
+    color: #3c6c4f; /* Changes text color on hover */
+}
+
+/* Changes the color of the text 'LinkedIn' when it is hovered  */
+#linked:hover {
+    color: #166fb3; /* Changes text color on hover */
+}
+
+/* Sets the style of the trademark in the footer */
+#tm {
+    text-align: right; /* Aligns text to the right */
+    font-family: monospace; /* Uses a monospace font */
+    font-size: 18px; /* Sets the font size */
+    color: #244c43; /* Text color */
+    text-decoration: none; /* Removes underline */
+    margin-right: 20px; /* Adds space to the right */
+}

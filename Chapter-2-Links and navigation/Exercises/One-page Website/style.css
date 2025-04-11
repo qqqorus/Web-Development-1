@@ -1,0 +1,161 @@
+/* Universal selector to apply styles to all elements */
+* {
+    color: white; /* Sets text color to white */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uses a modern, sans-serif font stack */
+    box-sizing: border-box; /* Ensures padding and border are included in element dimensions */
+}
+
+/* Styles for the body of the webpage */
+body {
+    background-image: url('https://images.hdqwalls.com/download/wicked-movie-2024-screen-x-poster-xz-1920x1080.jpg'); /* Sets the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    background-attachment: fixed; /* Fixes the background image in place */
+    background-position: center; /* Centers the background image */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+/* Styles for the header section */
+header {
+    color: #f8edd6; /* Sets text color to a light beige */
+    padding: 3%; /* Adds padding around the header content */
+    text-decoration: none; /* Ensures no text decoration (e.g., underlines) */
+    position: relative; /* Positions the header relative to its normal position */
+    margin: 0; /* Removes default margin */
+    padding: 2%; /* Adds padding around the header content */
+    top: 0px; /* Positions the header at the top of the page */
+    left: 0; /* Aligns the header to the left */
+    width: 100%; /* Makes the header span the full width of the page */
+}
+
+/* Styles for anchor (link) elements */
+a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Sets link text color to white */
+}
+
+/* Styles for navigation elements with class 'navheader' */
+.navheader {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uses a modern, sans-serif font stack */
+    font-size: 16px; /* Sets font size to 16px */
+    text-decoration: none; /* Removes underline from links */
+    margin-left: 50px; /* Adds left margin */
+    display: inline-block; /* Displays elements in a line */
+}
+
+/* Styles for navigation elements with class 'navheader1' */
+.navheader1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Uses a modern, sans-serif font stack */
+    font-size: 18px; /* Sets font size to 18px */
+    text-decoration: none; /* Removes underline from links */
+    display: inline-block; /* Displays elements in a line */
+    padding: 0px; /* Removes padding */
+    margin: 0px; /* Removes margin */
+    margin-left: 50px; /* Adds left margin */
+}
+
+/* Hover effect for navigation elements with class 'navheader' */
+.navheader:hover {
+    color: #3f552c; /* Changes text color to a dark green on hover */
+}
+
+/* Styles for the element with ID 'links' */
+#links {
+    display: inline; /* Displays element inline */
+    float: right; /* Floats element to the right */
+    margin-right: 50px; /* Adds right margin */
+}
+
+/* Styles for the element with ID 'pagename' */
+#pagename {
+    margin-right: 10px; /* Adds right margin */
+}
+
+/* Styles for elements with class 'title' */
+.title {
+    display: inline-block; /* Displays elements inline */
+    margin-right: 10px; /* Adds right margin */
+    line-height: 1px; /* Sets line height to 1px */
+}
+
+/* Styles for the main content container */
+#maindiv {
+    margin-left: 5%; /* Adds left margin */
+    margin-right: 5%; /* Adds right margin */
+    z-index: 0; /* Sets the stack order */
+    padding: 10px; /* Adds padding */
+    left: 0; /* Aligns the element to the left */
+    position: relative; /* Positions the element relative to its normal position */
+}
+
+/* Styles for the main content section */
+#maincontent {
+    width: 450px; /* Sets width to 450px */
+    z-index: 0; /* Sets the stack order */
+    padding: 10px; /* Adds padding */
+    border-radius: 30px; /* Rounds the corners */
+    left: 0; /* Aligns the element to the left */
+    float: left; /* Floats the element to the left */
+    text-shadow: 1px 1px 2px black; /* Adds a subtle text shadow */
+}
+
+/* Styles for the gallery section */
+#gallery {
+    width: 300px; /* Sets width to 300px */
+    background-color: rgba(20, 11, 20, 0.2); /* Adds a semi-transparent dark background */
+    z-index: 0; /* Sets the stack order */
+    padding-left: 15px; /* Adds left padding */
+    border-radius: 30px; /* Rounds the corners */
+    right: 0; /* Aligns the element to the right */
+    float: right; /* Floats the element to the right */
+}
+
+/* Styles for images */
+img {
+    margin-left: 10px; /* Adds left margin */
+    margin-right: 10px; /* Adds right margin */
+    height: 150px; /* Sets image height */
+}
+
+/* Styles for the reviews and trivia section */
+#reviewtrivia {
+    width: 450px; /* Sets width to 450px */
+    z-index: 0; /* Sets the stack order */
+    padding: 10px; /* Adds padding */
+    border-radius: 30px; /* Rounds the corners */
+    right: 0; /* Aligns the element to the right */
+    float: right; /* Floats the element to the right */
+    text-align: right; /* Aligns text to the right */
+    text-shadow: 1px 1px 2px black; /* Adds a subtle text shadow */
+}
+
+/* Styles for review elements */
+.review {
+    color: white; /* Sets text color to white */
+    font-size: 12px; /* Sets font size to 12px */
+    background-color: rgba(91, 96, 19, 0.5); /* Adds a semi-transparent green background */
+    border-radius: 20px; /* Rounds the corners */
+    padding: 20px; /* Adds padding */
+    margin: 5px; /* Adds margin */
+    text-align: justify; /* Justifies the text */
+    text-shadow: 1px 1px 2px black; /* Adds a subtle text shadow */
+}
+
+/* Styles for bold text inside review elements */
+.review b {
+    font-size: 14px; /* Sets font size to 14px */
+    text-align: right; /* Aligns text to the right */
+}
+
+/* Styles for trivia elements */
+.trivia {
+    color: white; /* Sets text color to white */
+    font-size: 12px; /* Sets font size to 12px */
+    background-color: rgba(221, 133, 136, 0.5); /* Adds a semi-transparent pink background */
+    border-radius: 20px; /* Rounds the corners */
+    padding: 20px; /* Adds padding */
+    margin: 5px; /* Adds margin */
+    text-align: justify; /* Justifies the text */
+    text-shadow: 1px 1px 2px black; /* Adds a subtle text shadow */
+}
