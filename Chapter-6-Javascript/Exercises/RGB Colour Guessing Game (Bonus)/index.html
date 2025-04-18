@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Guesser</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon for the website -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Main container for all game elements -->
+    <div class="game-container">
+        <header>
+            <h1>RGB Color Guesser</h1>
+
+            <!-- Difficulty selection controls with data attributes for JS interaction -->
+            <div class="difficulty-controls">
+                <button class="difficulty-button active" data-difficulty="easy">Easy</button>
+                <button class="difficulty-button" data-difficulty="medium">Medium</button>
+                <button class="difficulty-button" data-difficulty="hard">Hard</button>
+            </div>
+
+            <!-- Display area for the game statistics -->
+            <div class="game-stats">
+                <div class="stat-box">
+                    <span>Score:</span>
+                    <span id="score">0</span> <!-- Score will be updated by JS -->
+                </div>
+                <div class="stat-box">
+                    <span>Lives:</span>
+                    <span id="lives">3</span> <!-- Lives counter -->
+                </div>
+            </div>
+        </header>
+
+        <!-- This is where the game goes -->
+        <main>
+            <!-- Section displaying the target RGB color to guess -->
+            <section class="target-color">
+                <h2>Guess this color:</h2>
+                <div class="rgb-display" id="target-rgb">RGB(255, 255, 255)</div> <!-- Will be updated using JS -->
+            </section>
+
+            <!-- Container of color options that will be generated using JS -->
+            <section class="color-options" id="color-options"></section>
+
+            <!-- Feedback message area for correct/incorrect guesses -->
+            <div class="feedback-message" id="feedback"></div>
+        </main>
+
+        <!-- Hidden game over message that will popup when the player loses -->
+        <div class="game-over" id="game-over">
+            <div class="modal-content">
+                <h2>Game Over!</h2>
+                <p>Your final score: <span id="final-score">0</span></p> <!-- Final score display -->
+                <button id="play-again">Play Again</button> <!-- Game reset button -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="side-footer">
+        <p>Game by Qorus</p>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrol Cost Calculator</title>
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon for the website -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Theme toggle button with default emoji indicator -->
+    <button id="theme-toggle" class="theme-toggle">☀️ Light Mode</button>
+
+    <!-- Main calculator container -->
+    <div class="calculator">
+        <h1>Petrol Cost Calculator</h1>
+        <p><i>Drive Greener, Save Bigger!</i></p> <!-- Tagline -->
+        
+        <!-- Input section for petrol price -->
+        <div class="inputarea">
+            <label for="cost-per-liter">Cost per liter (€)</label>    
+            <input 
+                type="number" 
+                id="cost-per-liter" 
+                step="0.01" 
+                min="0" 
+                value="1.72" 
+                placeholder="Enter cost per liter"
+            >
+        </div>
+        
+        <!-- Input section for quantity of liters purchased -->
+        <div class="inputarea">
+            <label for="liters">Liters purchased</label>
+            <input 
+                type="number" 
+                id="liters" 
+                step="0.1" 
+                min="0" 
+                value="0" 
+                placeholder="Enter liters purchased"
+            >
+        </div>
+
+        <!-- Primary action button -->
+        <button id="calculate-btn">Calculate Total Cost</button>
+
+        <!-- Result display area which will be empty before the user presses the calculate button -->
+        <p id="result"></p>
+
+        <!-- Copyright notice -->
+        <p id="copyright">&copy; 2025 Quishia Desiree Famador</p>
+    </div>
+    
+    <!-- External JavaScript file for calculator logic -->
+    <script src="script.js"></script>
+</body>
+</html>

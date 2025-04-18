@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace, 'Segoe UI', Tahoma, Geneva, sans-serif;
+}
+
+/* Page background with fixed positioning */
+body {
+    background-image: url('https://i.pinimg.com/1200x/b9/03/50/b903500f0c6cfdd52d2f6cec5211bc80.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333a22;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main game container style */
+/* Color palette is from the background image */
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ecf0f1; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #0000001a; /* Subtle drop shadow */
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #39441f; /* Dark green border */
+}
+
+/* Header styles */
+header {
+    background-color: #333a22; /* Dark green */
+    color: #d0b37c; /* Gold text */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+/* Difficulty controls stlying */
+.difficulty-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Gap property for spacing */
+    margin-bottom: 15px;
+}
+
+.difficulty-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px; /* Pill-shaped buttons */
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover effects */
+    
+    &.active {
+        background-color: #576830; /* Darker green when active */
+        color: white;
+        font-weight: bold;
+    }
+}
+
+/* Game stats styling */
+.game-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Wider spacing between stats */
+}
+
+.stat-box {
+    background-color: #ffffff33;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Main Game Area */
+.target-color {
+    text-align: center;
+    padding: 20px;
+}
+
+/* RGB display with monospace font for code-like appearance */
+.rgb-display {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Color options that will change according to the difficulty */
+.color-options {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(3, 300px);
+    gap: 15px; /* Consistent spacing between options */
+}
+
+.color-chosen {
+    height: 120px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s; /* Interactive hover effects */
+    border: 3px solid transparent;
+
+    &:hover {
+        transform: scale(1.03); /* Slight grow effect */
+        box-shadow: 0 10px 10px #0000001a;
+    }
+}
+
+/* Feedback message with color coded states */
+.feedback-message {
+    min-height: 40px; /* Prevents the layout from shifting */
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.correct-feedback {
+    color: #2ecc71; /* Green for correct */
+}
+
+.incorrect-feedback {
+    color: #e74c3c; /* Red for incorrect */
+}
+
+/* Game over popup style with a center overlay */
+.game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Button to reset the game */
+#play-again {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    
+    &:hover {
+        background-color: #2980b9;
+    }
+}
+
+/* Specific styles for the difficulty settings */
+.color-options.easy {
+    grid-template-columns: repeat(3, 230px); /* Options are few so they are larger */
+    justify-content: center;
+}
+
+.color-options.medium {
+    grid-template-columns: repeat(4, 170px);
+    justify-content: center;
+}
+
+.color-options.hard {
+    grid-template-columns: repeat(5, 130px); /* There are more options so they are smaller */
+    justify-content: center;
+}
+
+/* Footer element positioned on the bottom-right */
+.side-footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #576830;
+    color: #d0b37c;
+    border: 1px solid #39441f;
+    border-radius: 70px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}

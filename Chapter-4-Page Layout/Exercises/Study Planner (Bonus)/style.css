@@ -1,37 +1,40 @@
 * {
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Makes padding included in width calculations */
 
+    /* Style for all h4 headings */
     h4 {
         margin: 0;
         padding: 4%;
         border-radius: 16px 16px 0px 0px;
-        background-color: #102e4a;
+        background-color: #102e4a; /* Dark blue header */
         text-align: center;
-        color: #fef7e5;
+        color: #fef7e5; /* Cream text */
     }
 }
 
+/* Page background and reset */
 body {
     margin: 0;
     padding: 0;
-    background-color: #6386ac;
+    background-color: #6386ac; /* Medium blue background */
 }
 
+/* Header styles with rounded bottom corners */
 header {
     margin: 0;
     padding: 0;
-    /* box-shadow: 0px 0px 20px #0ff; */
     border-radius: 0px 0px 30px 30px;
 }
 
+/* Main title styling */
 h1 {
-    background-color: #1a4a78;
+    background-color: #1a4a78; /* Darker blue */
     padding: 1%;
     text-align: center;
     margin: 0;
     color: #fef7e5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Different font for title */
 }
 
 nav {
@@ -42,17 +45,19 @@ nav {
     border-radius: 0px 0px 100px 100px;
 }
 
+/* Navigation links */
 nav a {
     margin: 1%;
     text-decoration: none;
     color: #fef7e5;
 
     &:hover {
-     color: #687e8b;
+     color: #687e8b; /* Lighter blue on hover */
      cursor: pointer;
     }
 }
 
+/* Main content container - flex layout for columns */
 #container {
     display: flex;
     justify-content: space-around;
@@ -61,28 +66,26 @@ nav a {
     
 }
 
+/* Column sizing - left, middle, right */
 #column1 {
     float: left;
-    width: 21%;
-    height: 910px;
-    /* border: 1px solid black; */
+    width: 21%; /* Narrow sidebar */
+    height: 910px; /* Fixed height */
 }
 
 #column2 {
     float: left;
-    /* border: 1px solid black; */
-    width: 53%;
+    width: 53%; /* Wide main content */
     height: 910px;
-    
 }
 
 #column3 {
     float: left;
-    /* border: 1px solid black; */
     height: 910px;
-    width: 21%;
+    width: 21%; /* Narrow sidebar */
 }
 
+/* Student info card */
 #student {
     border: 3px solid #081725;
     margin: 2% 0%;
@@ -108,6 +111,7 @@ nav a {
     }
 }
 
+/* To-do list styling */
 #todo {
     border: 3px solid #081725;
     margin: 7% 0%;
@@ -169,6 +173,7 @@ nav a {
     }
 }
 
+/* Events list */
 #events {
     border: 3px solid #081725;
     margin: 2% 0%;
@@ -192,6 +197,7 @@ nav a {
     }
 }
 
+/* Course description section */
 #desc {
     border: 3px solid #081725;
     margin: 0.8% 0%;
@@ -250,6 +256,7 @@ nav a {
     }
 }
 
+/* Timetable styling */
 #timetable {
     border: 3px solid #081725;
     margin: 3% 0%;
@@ -305,6 +312,7 @@ nav a {
     }
 }
 
+/* Calendar grid layout */
 #calendar {
     border: 3px solid #081725;
     margin: 2% 0%;
@@ -429,7 +437,8 @@ nav a {
         color: #fef7e5;
         font-size: 15px;
     }
-      
+     
+    /* Different colors for each skill */
     .html {width: 90%; background-color: #e54d26;}
     .css {width: 80%; background-color: #0070ba;}
     .js {width: 20%; background-color: #f89b34;}

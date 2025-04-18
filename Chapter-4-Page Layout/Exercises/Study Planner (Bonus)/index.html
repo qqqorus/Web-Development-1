@@ -1,48 +1,44 @@
-<!-- 
- - Wireframe (add image to the directory);
-- Header, Navigation menu, main content and a footer;
-- The main content must be split into two or three columns;
-- Five demo items;
-- Your HTML should use semantically correct elements;
-- An external style.css file;
-- The use of at least one button;
-- The page does not need to be interactive;
-- You should focus on the structure and visual layout of the page, but also consider design too;
-- Commenting throughout. 
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Planner</title>
+    <!-- Link to the stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="">
+    <!-- Link to the favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Top navigation bar with app title and menu -->
     <header>
         <h1>Study Planner</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a>Courses</a>
+            <a>Courses</a> <!-- Placeholder links (would add href later) -->
             <a>Notes</a>
             <a>Materials</a>
             <a>Student Info</a>
         </nav>
     </header>
 
+    <!-- Main content divided into three columns -->
     <main id="container">
+        <!-- Left sidebar - student info and tasks -->
         <section id="column1">
             <div id="student">
                 <h4>STUDENT INFO</h4>
                 <article>
+                    <!-- Basic student profile info -->
                     <b>ID Number:</b> 18-1134-997 <br>
                     <b>Course:</b> Cyber Security <br>
                     <b>Year & Level:</b> Year 1 Level 4 <br><br>
                     > <a>more</a> <
                 </article>
             </div>
+
+            <!-- Interactive to-do list with checkboxes -->
             <div id="todo">
                 <h4>TO-DO LIST</h4>
                 <input type="checkbox" id="todo1" name="todo1">
@@ -54,11 +50,14 @@
                 <input type="checkbox" id="todo3" name="todo3">
                 <label for="todo3">start assessment (digi-for)</label><br>
                 <hr>
-                <p><button>+</button></p>
+                <p><button>+</button></p> <!-- Add new task button -->
             </div>
+
             <div id="profs">
                 <h4>Handled by: Ms. Rafia</h4>
             </div>
+
+            <!-- Upcoming events list -->
             <div id="events">
                 <h4>UPCOMING EVENTS</h4>
                 <ul>
@@ -89,14 +88,21 @@
                 </ul>
             </div>
         </section>
+
+        <!-- Middle column - course info and timetable -->
         <section id="column2">
+            <!-- Course description section -->
             <div id="desc">
                 <h3>WEB DEVELOPMENT I</h3>
-                <article>The web is now the primary platform for deploying and using software, essential for work, social interaction, 
+                <article>
+                    The web is now the primary platform for deploying and using software, essential for work, social interaction, 
                     collaboration, and entertainment, making basic web development skills crucial for anyone in computing. 
                     This module teaches the fundamentals of creating interactive online experiences using HTML5, CSS, and JavaScript, 
                     covering content structure, styling, and interactivity, with no prior experience required. Through coding 
-                    challenges and creative projects, you’ll build a practical understanding of web development and best practices.</article>
+                    challenges and creative projects, you’ll build a practical understanding of web development and best practices.
+                </article>
+
+                <!-- Course logos with learn more buttons -->
                 <section class="courses">
                     <div class="courses">
                         <img src="https://www.nicepng.com/png/full/70-702627_python-logo-png.png" alt="html logo" height="150px">
@@ -115,6 +121,8 @@
                     </div>
                 </section>
             </div>
+
+            <!-- Weekly timetable table -->
             <div id="timetable">
                 <h3>TIMETABLE</h3>
                 <table>
@@ -127,6 +135,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <!-- Multiple rows showing class schedule -->
                         <tr>
                             <td>9:00 - 9:30</td>
                             <td></td>
@@ -179,10 +188,14 @@
                 </table>
             </div>
         </section>
+
+        <!-- Right sidebar - calendar and materials -->
         <section id="column3">
+            <!-- Calendar display for current month -->
             <div id="calendar">
                 <h3><&emsp;&emsp;May 2025&emsp;&emsp;></h3>
                 <div class="calendar_date">
+                    <!-- Day headers -->
                     <li class="calendar_day">S</li>
                     <li class="calendar_day">M</li>
                     <li class="calendar_day">T</li>
@@ -195,9 +208,10 @@
                     <li class="blank">28</li>
                     <li class="blank">29</li>
                     <li class="blank">30</li>
+                    <!-- Calendar dates... -->
                     <li class="calendar_number">1</li>
                     <li class="calendar_number">2</li>
-                    <li class="calendar_number chosen">3</li>
+                    <li class="calendar_number chosen">3</li> <!-- Selected date -->
                     <li class="calendar_number">4</li>
                     <li class="calendar_number">5</li>
                     <li class="calendar_number">6</li>
@@ -234,6 +248,8 @@
                     <li class="blank">6</li>
                 </div>
             </div>
+
+            <!-- Links to lecture materials -->
             <div id="teachings">
                 <h4>TEACHING MATERIALS</h4>
                 <ul>
@@ -248,9 +264,12 @@
                     > <a>more</a> <
                 </ul>
             </div>
+
+            <!-- Skill progress bars -->
             <div id="skills">
                 <h4>SKILL BAR</h4>
                 <section>
+                    <!-- Progress bars -->
                     <p><b>HTML</b></p>
                     <div class="container">
                         <div class="skills html">90%</div>
@@ -271,8 +290,10 @@
             </div>
         </section>
     </main>
+
+    <!-- Simple footer with copyright -->
     <footer>
-        <h5>Copyright &copy; Study Planner - 2025 Quishia Desiree Famador</h5>
+        <h5>&copy; Study Planner - 2025 Quishia Desiree Famador</h5>
     </footer>
 </body>
 </html>

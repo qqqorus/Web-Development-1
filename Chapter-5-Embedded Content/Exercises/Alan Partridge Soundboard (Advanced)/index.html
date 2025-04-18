@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alan Partridge Soundboard</title>
+    <!-- Link to stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <!-- Link to favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
 </head>
 <body>
+    <!-- Main container -->
     <main id="container">
+        <!-- Left column - Text-to-speech functionality -->
         <div id="column1">
             <h1>Text-To-Speech</h1>
             <form>
@@ -17,45 +23,52 @@
             <div><button type="button" id="speak" onclick="TexttoAudio()">Speak</button></div><br>
             <div id="note"><small><b>NOTE: </b>Enter your text and click the 'Speak' button.</small></div>
         </div>
+
+        <!-- Right column - Soundboard -->
         <div id="column2">
             <h1>Alan Partridge Soundboard</h1>
+
+            <!-- Scrollable sound clips table -->
             <div class="scroll-table">
+                <!-- First table of sound clips (1-9) -->
                 <table>
                     <tr>
                         <td onclick="document.getElementById('sound1').play()">
-                            <audio src="Audio/ah-ha.mp3" id="sound1"></audio>
+                            <audio src="audio/ah-ha.mp3" id="sound1"></audio>
                             <b>01</b><br>
                             <h2>Ah-ha!</h2>
-                            <i>00:01.30</i>
+                            <i>00:01.30</i> <!-- Clip duration -->
                         </td>
+                        <!-- More sound clips in this row... -->
                         <td onclick="document.getElementById('sound2').play()">
-                            <audio src="Audio/back-of-the-net.mp3" id="sound2"></audio>
+                            <audio src="audio/back-of-the-net.mp3" id="sound2"></audio>
                             <b>02</b><br>
                             <h2>Back of the net</h2>
                             <i>00:00.90</i>
                         </td>
                         <td onclick="document.getElementById('sound3').play()">
-                            <audio src="Audio/bangoutoforder.mp3" id="sound3"></audio>
+                            <audio src="audio/bangoutoforder.mp3" id="sound3"></audio>
                             <b>03</b><br>
                             <h2>Bang! Out of order.</h2>
                             <i>00:01.30</i>
                         </td>
                     </tr>
+                    <!-- Additional rows... -->
                     <tr>
                         <td onclick="document.getElementById('sound4').play()">
-                            <audio src="Audio/dan.mp3" id="sound4"></audio>
+                            <audio src="audio/dan.mp3" id="sound4"></audio>
                             <b>04</b><br>
                             <h2>Dan!</h2>
                             <i>00:00.40</i>
                         </td>
                         <td onclick="document.getElementById('sound5').play()">
-                            <audio src="Audio/emailoftheevening.mp3" id="sound5"></audio>
+                            <audio src="audio/emailoftheevening.mp3" id="sound5"></audio>
                             <b>05</b><br>
                             <h2>E-mail of the evening</h2>
                             <i>00:03.60</i>
                         </td>
                         <td onclick="document.getElementById('sound6').play()">
-                            <audio src="Audio/hellopartridge.mp3" id="sound6"></audio>
+                            <audio src="audio/hellopartridge.mp3" id="sound6"></audio>
                             <b>06</b><br>
                             <h2>Hello, Partridge</h2>
                             <i>00:00.90</i>
@@ -63,41 +76,43 @@
                     </tr>
                     <tr>
                         <td onclick="document.getElementById('sound7').play()">
-                            <audio src="Audio/iateascotchegg.mp3" id="sound7"></audio>
+                            <audio src="audio/iateascotchegg.mp3" id="sound7"></audio>
                             <b>07</b><br>
                             <h2>I ate a scotch egg</h2>
                             <i>00:01.80</i>
                         </td>
                         <td onclick="document.getElementById('sound8').play()">
-                            <audio src="Audio/imconfused.mp3" id="sound8"></audio>
+                            <audio src="audio/imconfused.mp3" id="sound8"></audio>
                             <b>08</b><br>
                             <h2>I'm confused</h2>
                             <i>00:01.70</i>
                         </td>
                         <td onclick="document.getElementById('sound9').play()">
-                            <audio src="Audio/smellmycheese.mp3" id="sound9"></audio>
+                            <audio src="audio/smellmycheese.mp3" id="sound9"></audio>
                             <b>09</b><br>
                             <h2>Smell my cheese!</h2>
                             <i>00:04.40</i>
                         </td>
                     </tr>
                 </table>
+
+                <!-- Second table of sound clips (10-18) -->
                 <table>
                     <tr>
                         <td onclick="document.getElementById('sound10').play()">
-                            <audio src="Audio/aqua.mp3" id="sound10"></audio>
+                            <audio src="audio/aqua.mp3" id="sound10"></audio>
                             <b>10</b><br>
                             <h2>Aqua</h2>
                             <i>00:01.30</i>
                         </td>
                         <td onclick="document.getElementById('sound11').play()">
-                            <audio src="Audio/arm-wrestling.mp3" id="sound11"></audio>
+                            <audio src="audio/arm-wrestling.mp3" id="sound11"></audio>
                             <b>11</b><br>
                             <h2>Arm wrestling</h2>
                             <i>00:00.90</i>
                         </td>
                         <td onclick="document.getElementById('sound12').play()">
-                            <audio src="Audio/bingbangstickitin.mp3" id="sound12"></audio>
+                            <audio src="audio/bingbangstickitin.mp3" id="sound12"></audio>
                             <b>12</b><br>
                             <h2>Bing bang stick it in!</h2>
                             <i>00:01.30</i>
@@ -105,19 +120,19 @@
                     </tr>
                     <tr>
                         <td onclick="document.getElementById('sound13').play()">
-                            <audio src="Audio/do-you-er.mp3" id="sound13"></audio>
+                            <audio src="audio/do-you-er.mp3" id="sound13"></audio>
                             <b>13</b><br>
                             <h2>Do you er...</h2>
                             <i>00:00.40</i>
                         </td>
                         <td onclick="document.getElementById('sound14').play()">
-                            <audio src="Audio/frank-sinatra.mp3" id="sound14"></audio>
+                            <audio src="audio/frank-sinatra.mp3" id="sound14"></audio>
                             <b>14</b><br>
                             <h2>Frank Sinatra</h2>
                             <i>00:03.60</i>
                         </td>
                         <td onclick="document.getElementById('sound15').play()">
-                            <audio src="Audio/he-got-scared-and-ran-away.mp3" id="sound15"></audio>
+                            <audio src="audio/he-got-scared-and-ran-away.mp3" id="sound15"></audio>
                             <b>15</b><br>
                             <h2>He got scared and ran away</h2>
                             <i>00:00.90</i>
@@ -125,41 +140,43 @@
                     </tr>
                     <tr>
                         <td onclick="document.getElementById('sound16').play()">
-                            <audio src="Audio/hot-topic.mp3" id="sound16"></audio>
+                            <audio src="audio/hot-topic.mp3" id="sound16"></audio>
                             <b>16</b><br>
                             <h2>Hot topic</h2>
                             <i>00:01.80</i>
                         </td>
                         <td onclick="document.getElementById('sound17').play()">
-                            <audio src="Audio/ill-be-honest-im-dead-against-it.mp3" id="sound17"></audio>
+                            <audio src="audio/ill-be-honest-im-dead-against-it.mp3" id="sound17"></audio>
                             <b>17</b><br>
                             <h2>I'll be honest</h2>
                             <i>00:01.70</i>
                         </td>
                         <td onclick="document.getElementById('sound18').play()">
-                            <audio src="Audio/jurassic-park.mp3" id="sound18"></audio>
+                            <audio src="audio/jurassic-park.mp3" id="sound18"></audio>
                             <b>18</b><br>
                             <h2>Jurassic Park</h2>
                             <i>00:04.40</i>
                         </td>
                     </tr>
                 </table>
+
+                <!-- Third table of sound clips (19-27) -->
                 <table>
                     <tr>
                         <td onclick="document.getElementById('sound19').play()">
-                            <audio src="Audio/monkey-tennis.mp3" id="sound19"></audio>
+                            <audio src="audio/monkey-tennis.mp3" id="sound19"></audio>
                             <b>19</b><br>
                             <h2>Monkey tennis?</h2>
                             <i>00:01.30</i>
                         </td>
                         <td onclick="document.getElementById('sound20').play()">
-                            <audio src="Audio/pretty-much-yeah.mp3" id="sound20"></audio>
+                            <audio src="audio/pretty-much-yeah.mp3" id="sound20"></audio>
                             <b>20</b><br>
                             <h2>Pretty much, yeah</h2>
                             <i>00:00.90</i>
                         </td>
                         <td onclick="document.getElementById('sound21').play()">
-                            <audio src="Audio/r-e-o-speed-wagon.mp3" id="sound21"></audio>
+                            <audio src="audio/r-e-o-speed-wagon.mp3" id="sound21"></audio>
                             <b>21</b><br>
                             <h2>R-E-O speed wagon</h2>
                             <i>00:01.30</i>
@@ -167,19 +184,19 @@
                     </tr>
                     <tr>
                         <td onclick="document.getElementById('sound22').play()">
-                            <audio src="Audio/strange-questions.mp3" id="sound22"></audio>
+                            <audio src="audio/strange-questions.mp3" id="sound22"></audio>
                             <b>22</b><br>
                             <h2>Strange questions</h2>
                             <i>00:00.40</i>
                         </td>
                         <td onclick="document.getElementById('sound23').play()">
-                            <audio src="Audio/that-is-superb.mp3" id="sound23"></audio>
+                            <audio src="audio/that-is-superb.mp3" id="sound23"></audio>
                             <b>23</b><br>
                             <h2>Superb</h2>
                             <i>00:03.60</i>
                         </td>
                         <td onclick="document.getElementById('sound24').play()">
-                            <audio src="Audio/this-plague-was-airborne.mp3" id="sound24"></audio>
+                            <audio src="audio/this-plague-was-airborne.mp3" id="sound24"></audio>
                             <b>24</b><br>
                             <h2>This plague was airborne</h2>
                             <i>00:00.90</i>
@@ -187,19 +204,19 @@
                     </tr>
                     <tr>
                         <td onclick="document.getElementById('sound25').play()">
-                            <audio src="Audio/which-is-french-for-water.mp3" id="sound25"></audio>
+                            <audio src="audio/which-is-french-for-water.mp3" id="sound25"></audio>
                             <b>25</b><br>
                             <h2>French for water</h2>
                             <i>00:01.80</i>
                         </td>
                         <td onclick="document.getElementById('sound26').play()">
-                            <audio src="Audio/why-do-birds.mp3" id="sound26"></audio>
+                            <audio src="audio/why-do-birds.mp3" id="sound26"></audio>
                             <b>26</b><br>
                             <h2>Why do birds</h2>
                             <i>00:01.70</i>
                         </td>
                         <td onclick="document.getElementById('sound27').play()">
-                            <audio src="Audio/you-people.mp3" id="sound27"></audio>
+                            <audio src="audio/you-people.mp3" id="sound27"></audio>
                             <b>27</b><br>
                             <h2>You people</h2>
                             <i>00:04.40</i>
@@ -207,11 +224,16 @@
                     </tr>
                 </table>
             </div>
+
+            <!-- Navigation buttons for soundboard -->
             <section class="buttons">
-                <button class="left" onclick="leftScroll()">&emsp13;<&emsp13;</button>
-                <button class="right" onclick="rightScroll()">&emsp13;>&emsp13;</button>
+                <button class="left" onclick="leftScroll()">&emsp13;<&emsp13;</button> <!-- Left scroll -->
+                <button class="right" onclick="rightScroll()">&emsp13;>&emsp13;</button> <!-- Right scroll -->
             </section>
         </div>
     </main>
+    
+    <!-- Link to JavaScript external file -->
+    <script src="script.js"></script>
 </body>
 </html>

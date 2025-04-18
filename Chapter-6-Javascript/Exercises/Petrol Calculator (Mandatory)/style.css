@@ -1,0 +1,198 @@
+* { 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+/* Main page layout - centers content vertically */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #31364d; /* Default dark theme background */
+
+    /* Nested light mode theme */
+    .light-mode {
+        background-color: #ffe9b2;
+    }
+}
+
+/* Calculator container styling */
+.calculator {
+    background-color: #00223e;
+    border: 5px solid #6a89b1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px 1px #2d4c6f; /* Glowing effect */
+    padding: 32px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading styles with accent color */
+h1 {
+    text-align: center;
+    margin: 10px 0 0;
+    font-size: 28px;
+    color: #45e336; /* Green accent color */
+}
+
+/* Tagline styling */
+p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 26px;
+    font-weight: bold;
+
+    i {
+        color: #fe870b; /* Orange accent for italic text */
+    }
+
+}
+
+/* Input field container spacing */
+.inputarea {
+    margin-bottom: 24px;
+}
+
+/* Form label styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Input field styling with focus effects */
+input {
+    width: 100%;
+    padding: 12px;
+    color: #00223e;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border 0.3s, box-shadow 0.3s;
+
+    &:focus {
+        border-color: #45e336;
+        box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+        outline: none;
+    }
+}
+
+/* Primary button styling with hover effects */
+button {
+    background-color: #f4ad00;
+    color: #b76200;
+    border-radius: 5px;
+    padding: 13px 20px;
+    font-size: 15px;
+    font-weight: 550;
+    cursor: pointer;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover {
+        background-color: #f0b111;
+        transform: translateY(-2px); /* Lift effect */
+    }
+    
+    &:active {
+        transform: translateY(0); /* Pressed state */
+    }
+}
+
+/* Result display area styling */
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #2d4c6f;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    min-height: 20px;
+}
+
+/* Copyright notice styling */
+#copyright {
+    font-size: small;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+    color: #6a89b1; /* Muted blue color */
+}
+
+/* Light mode styles */
+body.light-mode {
+    background-color: #f0f8fb;
+}
+
+.light-mode .calculator {
+    background-color: #efefef;
+    box-shadow: 0px 0px 50px 1px #0000004d;
+    color: #00223e;
+    border: 5px solid #000;
+}
+
+.light-mode h1 {
+    color: #105126; /* Dark green for light mode */
+}
+
+.light-mode p i {
+    color: #a8c35c; /* Light green accent */
+}
+
+.light-mode input {
+    background-color: #fff;
+    color: #000;
+    border-color: #444;
+}
+
+.light-mode label {
+    color: #00223e;
+}
+
+.light-mode #result {
+    background-color: #9aad62; /* Light green result box */
+    color: #fff;
+}
+
+.light-mode button:not(.theme-toggle) {
+    background-color: #105126;
+    color: #a8c35c;
+}
+
+.light-mode button:not(.theme-toggle):hover {
+    background-color: #177034;
+}
+
+.light-mode #copyright {
+    color: #105126;
+}
+
+/* Theme toggle button positioning and style */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #f4ad00;
+    color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 70px;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    width: 50px;
+}
+
+.light-mode .theme-toggle {
+    border-color: #555;
+    color: #fff;
+    background-color: #00223e;
+}
